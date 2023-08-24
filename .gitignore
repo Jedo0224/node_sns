@@ -1,0 +1,10 @@
+
+.env
+
+uploads/
+
+node_modules/
+
+nodebird-api/
+
+nodecat/

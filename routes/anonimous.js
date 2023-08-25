@@ -2,20 +2,22 @@ const express = require('express');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
+const upload = require('../middlewares/multer.middleware');
 
 const Room = require('../schemas/room');
 const Chat = require('../schemas/chat');
-
+const logger = require('../logger');
 const router = express.Router();
 
 
 router.get('/', async (req, res, next) => {
   try {
+    logger.info('익명 채팅하기 접속');
     const rooms = await Room.find({});
-    console.log('req.session ID: ', req.sessionID);
+    console.log('req.session ID: ', req.session);
 
     res.render('chat-main', { rooms, title: '익명 채팅방' });
-
+    logger.info('익명 채팅하기 화면 랜더링 완료');
   } catch (error) {
     console.error(error);
     next(error);
@@ -122,25 +124,25 @@ router.post('/room/:id/chat', async (req, res, next) => {
   }
 });
 
-try {
-  fs.readdirSync('uploads');
-} catch (err) {
-  console.error('uploads 폴더가 없어 uploads 폴더를 생성합니다.');
-  fs.mkdirSync('uploads');
-}
+// try {
+//   fs.readdirSync('uploads');
+// } catch (err) {
+//   console.error('uploads 폴더가 없어 uploads 폴더를 생성합니다.');
+//   fs.mkdirSync('uploads');
+// }
 
-const upload = multer({
-  storage: multer.diskStorage({
-    destination(req, file, done) {
-      done(null, 'uploads/');
-    },
-    filename(req, file, done) {
-      const ext = path.extname(file.originalname);
-      done(null, path.basename(file.originalname, ext) + Date.now() + ext);
-    },
-  }),
-  limits: { fileSize: 5 * 1024 * 1024 },
-});
+// const upload = multer({
+//   storage: multer.diskStorage({
+//     destination(req, file, done) {
+//       done(null, 'uploads/');
+//     },
+//     filename(req, file, done) {
+//       const ext = path.extname(file.originalname);
+//       done(null, path.basename(file.originalname, ext) + Date.now() + ext);
+//     },
+//   }),
+//   limits: { fileSize: 5 * 1024 * 1024 },
+// });
 
 
 router.post('/room/:id/gif', upload.single('gif'), async (req, res, next) => {

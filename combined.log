@@ -36,3 +36,311 @@
 {"level":"error","message":"GET /anonimous-chat 라우터가 없습니다."}
 {"level":"info","message":"hello"}
 {"level":"error","message":"GET /anonimous 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"POST /img 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"POST /%08anonimous/room/1/gif 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"POST /%08anonimous/room/1/gif 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /main.css 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /chat-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /chat-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /sns-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /sns-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /chat-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /sns-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /sns-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /chat-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /sns-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /sns-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /public/sns-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /public/sns-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /public/sns-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /public/sns-main.css 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"info","message":"hello"}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"error","message":"GET /public/sns-main.css 라우터가 없습니다."}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"error","message":"GET /public/sns-main.css 라우터가 없습니다."}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"error","message":"GET /img/16852008352201692890452245.png 라우터가 없습니다."}
+{"level":"error","message":"GET /img/16852012302781692878543015.png 라우터가 없습니다."}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A2%C3%A1%C2%84%C2%8F%C3%A1%C2%85%C2%A5%C3%A1%C2%84%C2%90%C3%A1%C2%85%C2%A9%C3%A1%C2%86%C2%AB1692856509306.png 라우터가 없습니다."}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B721668835221073.jpg 라우터가 없습니다."}
+{"level":"error","message":"GET /img/%C3%A1%C2%84%C2%8E%C3%A1%C2%85%C2%A5%C3%A1%C2%86%C2%AB%C3%A1%C2%84%C2%8B%C3%A1%C2%85%C2%A3%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%A7%C3%A1%C2%86%C2%AB%20%C3%A1%C2%84%C2%92%C3%A1%C2%85%C2%AC%C3%A1%C2%84%C2%8C%C3%A1%C2%85%C2%A1%C3%A1%C2%86%C2%BC%C3%A1%C2%84%C2%82%C3%A1%C2%85%C2%B5%C3%A1%C2%86%C2%B71668834962243.jpg 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"info","message":"익명 채팅하기 접속"}
+{"level":"info","message":"익명 채팅하기 화면 랜더링 완료"}
+{"level":"error","message":"GET /gif/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}
+{"level":"error","message":"GET /img/undefined 라우터가 없습니다."}

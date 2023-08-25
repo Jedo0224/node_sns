@@ -13,11 +13,11 @@ router.use((req, res, next) => {
 });
 
 router.get('/profile', isLoggedIn, (req, res) => {
-  res.render('profile', { title: '내 정보 - NodeBird' });
+  res.render('profile', { title: '내 정보 - Elastic-SNS' });
 });
 
 router.get('/join', isNotLoggedIn, (req, res) => {
-  res.render('join', { title: '회원가입 - NodeBird' });
+  res.render('join', { title: '회원가입 - Elastic-SNS' });
 });
 
 router.get('/', async (req, res, next) => {
@@ -30,7 +30,7 @@ router.get('/', async (req, res, next) => {
       order: [['createdAt', 'DESC']],
     });
     res.render('main', {
-      title: 'NodeBird',
+      title: 'Elastic-SNS',
       twits: posts,
     });
   } catch (err) {
@@ -52,7 +52,7 @@ router.get('/hashtag', async (req, res, next) => {
     }
 
     return res.render('main', {
-      title: `${query} | NodeBird`,
+      title: `${query} | Elastic-SNS`,
       twits: posts,
     });
   } catch (error) {

@@ -13,7 +13,7 @@
             <div>{{chat.user}}</div>
 
             {% if chat.gif %}  <!-- 대화 내역 중 사진을 보냈던 데이터가 있으면, 사진 호출-->
-              <img src="/gif/{{chat.gif}}">
+              <img src="{{chat.gif}}">
             {% else %}  <!-- 사진을 보냈던 데이터가 없으면, 채팅 보냄-->
               <div>{{chat.chat}}</div>  
             {% endif %}
@@ -29,7 +29,7 @@
             <div>{{chat.user}}</div>
             
             {% if chat.gif %} <!-- 대화 내역 중 사진을 보냈던 데이터가 있으면, 사진 호출-->
-              <img src="/gif/{{chat.gif}}">
+              <img src="{{chat.gif}}">
             {% else %}
               <div>{{chat.chat}}</div>  <!-- 사진을 보냈던 데이터가 없으면, 채팅 보냄-->
             {% endif %}
@@ -51,7 +51,9 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>
   <script>
+
     const socket = io.connect('http://localhost:8001/chat', {
+      
       path: '/socket.io',
     });
 
@@ -97,7 +99,8 @@
         div.appendChild(chat);
       } else {
         const gif = document.createElement('img');
-        gif.src = '/gif/' + data.gif;
+        gif.src = data.gif;
+        // gif.src = '/gif/' + data.gif;
         div.appendChild(gif);
       }
 

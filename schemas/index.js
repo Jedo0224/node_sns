@@ -32,8 +32,8 @@
 
 const mongoose = require('mongoose');
 
-const { MONGO_ID, MONGO_PASSWORD, NODE_ENV } = process.env;
-const MONGO_URL = `mongodb://${MONGO_ID}:${MONGO_PASSWORD}@localhost:27017/admin`;
+const { MONGO_ID, MONGO_PASSWORD, NODE_ENV, DOCUMENTDB_URL } = process.env;
+const MONGO_URL = `mongodb://${MONGO_ID}:${MONGO_PASSWORD}@${DOCUMENTDB_URL}`;
 
 const connect = async () => {
   try {
@@ -42,7 +42,7 @@ const connect = async () => {
     }
     
     await mongoose.connect(MONGO_URL, {
-      dbName: 'gifchat',
+      dbName: 'gifchat22',
       useNewUrlParser: true,
       // useCreateIndex: true,
     });

@@ -2,13 +2,16 @@ const SocketIO = require('socket.io');
 const axios = require('axios');
 const cookieParser = require('cookie-parser');
 const cookie = require('cookie-signature');
+const cors = require('cors')
 
 module.exports = (server, app, sessionMiddleware) => {
   const io = SocketIO(server, { path: '/socket.io' });
+  io.use(cors());
+
   app.set('io', io);
   const room = io.of('/room');
   const chat = io.of('/chat');
-
+  
   io.use((socket, next) => {    // 이 부분의 역할은 뭐지?
     cookieParser(process.env.COOKIE_SECRET)(socket.request, socket.request.res, next);
     sessionMiddleware(socket.request, {}, next);

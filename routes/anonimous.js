@@ -150,7 +150,7 @@ router.post('/room/:id/gif', upload.single('gif'), async (req, res, next) => {
     const chat = await Chat.create({
       room: req.params.id,
       user: req.session.color,
-      gif: req.file.filename,
+      gif: req.file.location
     });
     req.app.get('io').of('/chat').to(req.params.id).emit('chat', chat);
     res.send('ok');

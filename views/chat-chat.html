@@ -1,0 +1,139 @@
+{% extends 'chat-layout.html' %}
+
+{% block content %}
+  <h1>{{title}}</h1>
+  <a href="/anonimous" id="exit-btn">방 나가기</a>
+  <fieldset>
+    <legend>채팅 내용</legend>
+
+    <div id="chat-list">    <!-- index.js 에서 넘어온 chats(대화내역 중에서 현재 사용자 이름과 같으면 mine)-->
+      {% for chat in chats %}
+        {% if chat.user === user %}
+          <div class="mine" style="color: {{chat.user}}"> <!-- 대화 내역 중에서 사용자 이름과 같으면-->
+            <div>{{chat.user}}</div>
+
+            {% if chat.gif %}  <!-- 대화 내역 중 사진을 보냈던 데이터가 있으면, 사진 호출-->
+              <img src="/gif/{{chat.gif}}">
+            {% else %}  <!-- 사진을 보냈던 데이터가 없으면, 채팅 보냄-->
+              <div>{{chat.chat}}</div>  
+            {% endif %}
+          </div>
+
+        {% elif chat.user === 'system' %} 
+          <div class="system">
+            <div>{{chat.chat}}</div>
+          </div>
+
+        {% else %}  <!-- 대화 내역 중에서 사용자 이름과 다르면-->
+          <div class="other" style="color: {{chat.user}}">
+            <div>{{chat.user}}</div>
+            
+            {% if chat.gif %} <!-- 대화 내역 중 사진을 보냈던 데이터가 있으면, 사진 호출-->
+              <img src="/gif/{{chat.gif}}">
+            {% else %}
+              <div>{{chat.chat}}</div>  <!-- 사진을 보냈던 데이터가 없으면, 채팅 보냄-->
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </fieldset>
+  
+  <form action="/anonimous/chat" id="chat-form" method="post" enctype="multipart/form-data">
+    <button><label for="gif">첨부 파일</label></button>
+
+    <!-- <button for="gif">사진 올리기</button> -->
+    <input type="file" id="gif" name="gif" accept="image">
+    <input type="text" id="chat" name="chat">
+    <button type="submit">전송</button>
+  </form>
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io.connect('http://localhost:8005/chat', {
+      path: '/socket.io',
+    });
+
+    //  socket.on('join')
+    socket.on('join', function (data) {
+      const div = document.createElement('div');
+      div.classList.add('system');
+      const chat = document.createElement('div');
+      div.textContent = data.chat;
+      div.appendChild(chat);
+      document.querySelector('#chat-list').appendChild(div);
+    });
+
+    // socket.on('exit')
+    socket.on('exit', function (data) {
+      const div = document.createElement('div');
+      div.classList.add('system');
+      const chat = document.createElement('div');
+      div.textContent = data.chat;
+      div.appendChild(chat);
+      document.querySelector('#chat-list').appendChild(div);
+    });
+
+
+    // socket.on('chat')
+    socket.on('chat', function (data) {
+      const div = document.createElement('div');
+      if (data.user === '{{user}}') {
+        div.classList.add('mine');
+      } else {
+        div.classList.add('other');
+      }
+
+
+      const name = document.createElement('div');
+      name.textContent = data.user;
+      div.appendChild(name);
+
+
+      if (data.chat) {
+        const chat = document.createElement('div');
+        chat.textContent = data.chat;
+        div.appendChild(chat);
+      } else {
+        const gif = document.createElement('img');
+        gif.src = '/gif/' + data.gif;
+        div.appendChild(gif);
+      }
+
+      div.style.color = data.user;
+      document.querySelector('#chat-list').appendChild(div);
+    });
+    
+    document.querySelector('#chat-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (e.target.chat.value) {
+        axios.post('/anonimous/room/{{room._id}}/chat', { // axios 로 메세지 보냄.
+          chat: this.chat.value,
+        })
+          .then(() => {
+            e.target.chat.value = '';
+          })
+          .catch((err) => {
+            console.error(err);
+          });
+      }
+    });
+
+
+    document.querySelector('#gif').addEventListener('change', function (e) {
+      console.log(e.target.files);
+      const formData = new FormData();
+      formData.append('gif', e.target.files[0]);
+
+      axios.post('/anonimous/room/{{room._id}}/gif', formData)
+        .then(() => {
+          e.target.file = null;
+        })
+        .catch((err) => {
+          console.error(err);
+        });
+    });
+  </script>
+
+{% endblock %}

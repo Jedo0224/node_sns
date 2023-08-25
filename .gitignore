@@ -1,6 +1,8 @@
 
 .env
 
+.env-copy
+
 uploads/
 
 node_modules/

@@ -4,7 +4,7 @@
   "description": "익스프레스로 만드는 sns 서비스",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "pm2 start app.js --watch",
     "dev": "nodemon server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,7 +12,6 @@
   "license": "MIT",
   "dependencies": {
     "aws-sdk": "^2.1444.0",
-    "axios": "^1.4.0",
     "bcrypt": "^5.0.1",
     "color-hash": "^2.0.2",
     "connect-redis": "^6.1.3",

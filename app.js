@@ -7,14 +7,17 @@ const nunjucks = require('nunjucks');
 const dotenv = require('dotenv');
 const passport = require('passport');
 const ColorHash = require('color-hash').default;
-const cors = require('cors')
+const cors = require('cors');
+var requestIp = require('request-ip');
+
+
 // Add this to the very top of the first file loaded in your app
-var apm = require('elastic-apm-node').start({
-  serviceName: 'my-service-name',
-  secretToken: 'gKJZdNMdFf4yLIf408',
-  serverUrl: 'https://129403cb556b4d73bed31ce164b3929b.apm.ap-northeast-2.aws.elastic-cloud.com:443',
-  environment: 'my-environment'
-});
+// var apm = require('elastic-apm-node').start({
+//   serviceName: 'my-service-name',
+//   secretToken: 'gKJZdNMdFf4yLIf408',
+//   serverUrl: 'https://129403cb556b4d73bed31ce164b3929b.apm.ap-northeast-2.aws.elastic-cloud.com:443',
+//   environment: 'my-environment'
+// });
 
 dotenv.config();
 const webSocket = require('./socket');
@@ -115,6 +118,8 @@ makeNickname = () => {
 }
 
 app.use((req, res, next) => {
+  let ip = requestIp.getClientIp(req);
+  res.locals.ip = ip;
   if (!req.session.color) {
     // const colorHash = new ColorHash();
     // req.session.color = colorHash.hex(req.sessionID);
@@ -142,9 +147,6 @@ if(process.env.NODE_ENV ==='production'){
 
 
 
-
-
-
 app.use('/', pageRouter);
 app.use('/anonimous', anonimousRouter);
 
@@ -166,11 +168,13 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
   res.locals.message = err.message;
   res.locals.error = process.env.NODE_ENV !== 'production' ? err : {};
+  
+  logger.error(`${err.message} - ${res.locals.ip}`);
   res.status(err.status || 500);
   res.render('error');
 });
 
-const server = app.listen(app.get('port'), () => {
+const server = app.listen(app.get('port'), '0.0.0.0', () => {
   console.log(app.get('port'), '번 포트에서 대기중');
 });
 

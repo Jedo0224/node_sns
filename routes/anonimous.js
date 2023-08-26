@@ -3,7 +3,7 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 const upload = require('../middlewares/multer.middleware');
-
+// var requestIp = require('request-ip');
 const Room = require('../schemas/room');
 const Chat = require('../schemas/chat');
 const logger = require('../logger');
@@ -12,7 +12,8 @@ const router = express.Router();
 
 router.get('/', async (req, res, next) => {
   try {
-    logger.info('익명 채팅하기 접속');
+    logger.info(`익명 채팅하기 접속 - ${res.locals.ip}`);
+    // console.log("접속한 ip: ", req.headers);
     const rooms = await Room.find({});
     console.log('req.session ID: ', req.session);
 

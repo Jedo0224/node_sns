@@ -21,6 +21,7 @@
     "cors": "^2.8.5",
     "csurf": "^1.11.0",
     "dotenv": "^16.0.2",
+    "elastic-apm-node": "^3.49.1",
     "express": "^4.18.1",
     "express-session": "^1.17.3",
     "firebase": "^9.13.0",
@@ -38,11 +39,13 @@
     "passport-local": "^1.0.0",
     "pm2": "^5.2.0",
     "redis": "^4.3.1",
+    "request-ip": "^3.3.0",
     "sanitize-html": "^2.7.2",
     "sequelize": "^6.21.4",
     "sequelize-cli": "^6.4.1",
     "socket.io": "^4.7.2",
     "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
     "ws": "^8.13.0"
   }
 }

@@ -41,7 +41,8 @@ router.post('/login', isNotLoggedIn, (req, res, next) => {
       if (!user) {
         return res.redirect(`/?loginError=${info.message}`);
       }
-  
+      console.log("유저: ", user);
+      console.log("유저 닉네임: ", user.dataValues.nick);
       return req.login(user, (loginError) => {
         if (loginError) {
           console.error(loginError);

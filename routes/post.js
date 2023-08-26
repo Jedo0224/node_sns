@@ -3,7 +3,7 @@ const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 const upload = require('../middlewares/multer.middleware');
-
+const logger = require('../logger');
 
 const { Post, Hashtag } = require('../models');
 const { isLoggedIn } = require('./middlewares');

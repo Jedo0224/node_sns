@@ -32,18 +32,18 @@ const logger = require('./logger');
 
 const app = express();
 
-app.get('/', (req, res) => {
-  // 사용자의 IP 주소 추출
-  const userIp = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+// app.get('/', (req, res) => {
+//   // 사용자의 IP 주소 추출
+//   const userIp = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   
-  // Elastic APM에서 사용자의 IP 주소를 태그로 추가
-  apm.setCustomContext({ user_ip: userIp });
+//   // Elastic APM에서 사용자의 IP 주소를 태그로 추가
+//   apm.setCustomContext({ user_ip: userIp });
   
-  // 로그에 사용자 IP 주소 기록
-  console.log(`User IP: ${userIp}`);
+//   // 로그에 사용자 IP 주소 기록
+//   console.log(`User IP: ${userIp}`);
   
-  res.send('Hello, World!');
-});
+//   res.send('Hello, World!');
+// });
 
 
 let corsOptions = {

@@ -5,13 +5,54 @@
     <form id="join-form" action="/auth/join" method="post">
       <div class="input-group">
         <label for="join-email">이메일</label>
-        <input id="join-email" type="email" name="email"></div>
+        <input id="join-email" type="email" name="email">
+      </div>
       <div class="input-group">
         <label for="join-nick">닉네임</label>
-        <input id="join-nick" type="text" name="nick"></div>
+        <input id="join-nick" type="text" name="nick">
+      </div>
       <div class="input-group">
         <label for="join-password">비밀번호</label>
         <input id="join-password" type="password" name="password">
+      </div>
+      <div class="input-group">
+        <label for="join-gender">성별</label>
+        <select id="join-gender" name="gender">
+          <option value="male">남성</option>
+          <option value="female">여성</option>
+          <option value="other">기타</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="join-age">연령대</label>
+        <select id="join-age" name="age">
+          <option value="10대">10대</option>
+          <option value="20대">20대</option>
+          <option value="30대">30대</option>
+          <option value="40대">40대</option>
+          <option value="50대 이상">50대 이상</option>
+        </select>
+      </div>
+      <div class="input-group">
+        <label for="join-location">지역</label>
+        <select id="join-location" name="location">
+          <option value="서울">서울</option>
+          <option value="경기">경기</option>
+          <option value="인천">인천</option>
+          <option value="강원">강원</option>
+          <option value="대전">대전</option>
+          <option value="대구">대구</option>
+          <option value="부산">부산</option>
+          <option value="제주">제주</option>
+          <option value="광주">광주</option>
+          <option value="전북">전북</option>
+          <option value="전남">전남</option>
+          <option value="충북">충북</option>
+          <option value="충남">충남</option>
+          <option value="경북">경북</option>
+          <option value="경남">경남</option>
+        </select>
+        <!-- <input id="join-location" type="text" name="location"> -->
       </div>
       <button id="join-btn" type="submit" class="btn">회원가입</button>
     </form>

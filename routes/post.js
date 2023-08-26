@@ -5,7 +5,7 @@ const fs = require('fs');
 const upload = require('../middlewares/multer.middleware');
 const logger = require('../logger');
 
-const { Post, Hashtag } = require('../models');
+const { User, Post, Hashtag } = require('../models');
 const { isLoggedIn } = require('./middlewares');
 
 const router = express.Router();
@@ -50,8 +50,15 @@ const upload2 = multer();
 // 게시글 업로드를 처리하는 라우터 이전 라우터에서 이미지를 업로드했다면 이미지 주소도 req.body.url 로 전송된다.
 router.post('/', isLoggedIn, upload2.none(), async (req, res, next) => {
   try {
+    //  logger.info(`로그인 완료 - ${res.locals.ip} ${user.dataValues.age} ${user.dataValues.gender} ${user.dataValues.region}`);
     logger.info(`게시글 업로드 시작 - ${res.locals.ip}`);
 
+    const user = await User.findOne({
+      where:{
+        id: req.user.id
+      }
+    });
+    
     const post = await Post.create({
       content: req.body.content,
       img: req.body.url,  // 이전 라우터에서 업로드한 이미지 주소
@@ -59,7 +66,11 @@ router.post('/', isLoggedIn, upload2.none(), async (req, res, next) => {
     });
 
     const hashtags = req.body.content.match(/#[^\s#]*/g);   // 게시글에서 해시테그를 정규표현식(/#[^\s#]*/g)으로 추출하는 부분
-    if (hashtags) {
+    if(!hashtags){
+      logger.info(`게시글 업로드 완료 - ${res.locals.ip} ${user.dataValues.age} ${user.dataValues.gender} ${user.dataValues.region}`);
+    }
+
+    else if (hashtags) {
       const result = await Promise.all(
         hashtags.map(tag => {
           return Hashtag.findOrCreate({
@@ -68,8 +79,9 @@ router.post('/', isLoggedIn, upload2.none(), async (req, res, next) => {
         }),
       );
       await post.addHashtags(result.map(r => r[0]));
+      logger.info(`게시글 업로드 완료 - ${res.locals.ip} - ${res.locals.ip} ${user.dataValues.age} ${user.dataValues.gender} ${user.dataValues.region} ${hashtags}`);
     }
-    logger.info(`게시글 업로드 완료 - ${res.locals.ip}`);
+    
     res.redirect('/');
   } catch (error) {
     logger.info(`게시글 업로드 실패 - ${res.locals.ip}`);

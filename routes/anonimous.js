@@ -12,12 +12,12 @@ const router = express.Router();
 
 router.get('/', async (req, res, next) => {
   try {
-    logger.info(`익명 채팅하기 페이지 요청- ${res.locals.ip}`);
+    logger.info(`익명 채팅하기 페이지 요청 - ${res.locals.ip}`);
     const rooms = await Room.find({});
     console.log('req.session ID: ', req.session);
 
     res.render('chat-main', { rooms, title: '익명 채팅방' });
-    logger.info('익명 채팅하기 페이지 랜더링 완료');
+    logger.info(`익명 채팅하기 페이지 랜더링 완료 - ${res.locals.ip}`);
   } catch (error) {
     console.error(error);
     next(error);

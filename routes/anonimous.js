@@ -12,13 +12,12 @@ const router = express.Router();
 
 router.get('/', async (req, res, next) => {
   try {
-    logger.info(`익명 채팅하기 접속 - ${res.locals.ip}`);
-    // console.log("접속한 ip: ", req.headers);
+    logger.info(`익명 채팅하기 페이지 요청- ${res.locals.ip}`);
     const rooms = await Room.find({});
     console.log('req.session ID: ', req.session);
 
     res.render('chat-main', { rooms, title: '익명 채팅방' });
-    logger.info('익명 채팅하기 화면 랜더링 완료');
+    logger.info('익명 채팅하기 페이지 랜더링 완료');
   } catch (error) {
     console.error(error);
     next(error);
@@ -27,12 +26,15 @@ router.get('/', async (req, res, next) => {
 
 // 채팅방을 생성하기 위해 설정을 입력받는 부분으로.
 router.get('/room', (req, res) => {
+  logger.info(`채팅방 생성 페이지 요청 시작 - ${res.locals.ip}`);
   res.render('chat-room', { title: '익명 채팅방 생성' });
+  logger.info(`채팅방 생성 페이지 랜더링 완료 - ${res.locals.ip}`);
 });
 
 // 원하는 채팅방 설정 입력한 것을 가지고 새로운 채팅방을 생성하는 부분.
 router.post('/room', async (req, res, next) => {
   try {
+    logger.info(`채팅방 생성 요청 시작 - ${res.locals.ip}`);
     const newRoom = await Room.create({
       title: req.body.title,
       max: req.body.max,
@@ -44,10 +46,10 @@ router.post('/room', async (req, res, next) => {
     const io = req.app.get('io');
 
     io.of('/room').emit('newRoom', newRoom);
-
+    logger.info(`채팅방 생성 완료 - ${res.locals.ip}`);
     res.redirect(`/anonimous/room/${newRoom._id}?password=${req.body.password}`);
   } catch (error) {
-    console.error(error);
+    logger.info(`채팅방 생성 실패 - ${res.locals.ip}`);
     next(error);
   }
 });
@@ -56,6 +58,7 @@ router.post('/room', async (req, res, next) => {
 // req.params.id 에 해당하는 방에 접속하는 라우터
 router.get('/room/:id', async (req, res, next) => {
   try {
+    logger.info(`채팅방 접속 요청 시작 - ${res.locals.ip}`);
     // 방 접속 시 기존 채팅 내역을 불러옴.
     const room = await Room.findOne({ _id: req.params.id });
     const io = req.app.get('io');
@@ -75,7 +78,7 @@ router.get('/room/:id', async (req, res, next) => {
 
     // 방에 접속할 때는 DB로부터 채팅 내역을 가져옴.
     const chats = await Chat.find({ room: room._id }).sort('createdAt');
-
+    logger.info(`채팅방 접속 요청 완료 - ${res.locals.ip}`);
     return res.render('chat-chat', {
       room,
       title: room.title,
@@ -84,7 +87,7 @@ router.get('/room/:id', async (req, res, next) => {
     });
 
   } catch (error) {
-    console.error(error);
+    logger.info(`채팅방 접속 요청 실패 - ${res.locals.ip}`);
     return next(error);
   }
 });
@@ -99,7 +102,6 @@ router.delete('/room/:id', async (req, res, next) => {
       req.app.get('io').of('/room').emit('removeRoom', req.params.id);
     }, 2000);
   } catch (error) {
-    console.error(error);
     next(error);
   }
 });
@@ -108,6 +110,7 @@ router.delete('/room/:id', async (req, res, next) => {
 // 채팅을 보낼 때마다 채팅 내용이 이 라우터로 전송되고, 라우터에서 다시 웹소켓으로 메세지를 보낸다.
 router.post('/room/:id/chat', async (req, res, next) => {
   try {
+    logger.info(`텍스트 채팅 전송 요청 시작 - ${res.locals.ip}`);
     const chat = await Chat.create({  // 채팅 생성
       room: req.params.id,
       user: req.session.color,
@@ -118,9 +121,10 @@ router.post('/room/:id/chat', async (req, res, next) => {
 
     // io.of('/chat').to(방 아이디).emit() 으로 같은 방에 들어있는 소켓들에게 메세지 전송
     req.app.get('io').of('/chat').to(req.params.id).emit('chat', chat); // 보낸 채팅 메세지 내용을 웹소켓으로 전송.
+    logger.info(`텍스트 채팅 전송 요청 완료 - ${res.locals.ip}`);
     res.send('ok');
   } catch {
-    console.error(error);
+    logger.info(`텍스트 채팅 전송 요청 실패 - ${res.locals.ip}`);
     next(error);
   }
 });
@@ -148,15 +152,17 @@ router.post('/room/:id/chat', async (req, res, next) => {
 
 router.post('/room/:id/gif', upload.single('gif'), async (req, res, next) => {
   try {
+    logger.info(`이미지 채팅 전송 요청 시작 - ${res.locals.ip}`);
     const chat = await Chat.create({
       room: req.params.id,
       user: req.session.color,
       gif: req.file.location
     });
     req.app.get('io').of('/chat').to(req.params.id).emit('chat', chat);
+    logger.info(`이미지 채팅 전송 요청 완료 - ${res.locals.ip}`);
     res.send('ok');
   } catch (error) {
-    console.error(error);
+    logger.info(`이미지 채팅 전송 요청 실패 - ${res.locals.ip}`);
     next(error);
   }
 });

@@ -35,7 +35,7 @@ const router = express.Router();
 // router.post('/img', isLoggedIn, upload.single('img'), (req, res) => { // 'img' 는 html 에서 <input name="img" 에 해당함
   router.post('/img', upload.single('img'), (req, res) => { // 'img' 는 html 에서 <input name="img" 에 해당함
   try {
-    
+    logger.info(`사진 전송 - ${res.locals.ip}`);
     console.log(req.file.location);
     res.json({ url: req.file.location });  
   } catch (error) {
@@ -50,7 +50,7 @@ const upload2 = multer();
 // 게시글 업로드를 처리하는 라우터 이전 라우터에서 이미지를 업로드했다면 이미지 주소도 req.body.url 로 전송된다.
 router.post('/', isLoggedIn, upload2.none(), async (req, res, next) => {
   try {
-    console.log(req.user);
+    logger.info(`게시글 업로드 시작 - ${res.locals.ip}`);
 
     const post = await Post.create({
       content: req.body.content,
@@ -69,10 +69,10 @@ router.post('/', isLoggedIn, upload2.none(), async (req, res, next) => {
       );
       await post.addHashtags(result.map(r => r[0]));
     }
-
+    logger.info(`게시글 업로드 완료 - ${res.locals.ip}`);
     res.redirect('/');
   } catch (error) {
-    console.error(error);
+    logger.info(`게시글 업로드 실패 - ${res.locals.ip}`);
     next(error);
   }
 });

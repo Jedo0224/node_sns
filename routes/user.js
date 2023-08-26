@@ -1,5 +1,5 @@
 const express = require('express');
-
+const logger = require('../logger');
 const { isLoggedIn } = require('./middlewares');
 const User = require('../models/user');
 

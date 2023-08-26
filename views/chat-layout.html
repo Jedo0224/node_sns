@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <script src="https://unpkg.com/@elastic/apm-rum@5.12.0/dist/bundles/elastic-apm-rum.umd.min.js"></script>
+    <script>
+      elasticApm.init({
+        serviceName: "my-service-name",
+        serverUrl:
+          "https://129403cb556b4d73bed31ce164b3929b.apm.ap-northeast-2.aws.elastic-cloud.com:443",
+      });
+    </script>
+    <meta charset="UTF-8" />
     <title>{{title}}</title>
-    <link rel = "stylesheet" href="/chat-main.css">
-</head>
-<body>
-    {% block content %}
-    {% endblock %}
-    {% block script %}
-    {% endblock %}
-</body>
+    <link rel="stylesheet" href="/chat-main.css" />
+  </head>
+  <body>
+    {% block content %} {% endblock %} {% block script %} {% endblock %}
+  </body>
 </html>

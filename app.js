@@ -8,6 +8,13 @@ const dotenv = require('dotenv');
 const passport = require('passport');
 const ColorHash = require('color-hash').default;
 const cors = require('cors')
+// Add this to the very top of the first file loaded in your app
+var apm = require('elastic-apm-node').start({
+  serviceName: 'my-service-name',
+  secretToken: 'gKJZdNMdFf4yLIf408',
+  serverUrl: 'https://129403cb556b4d73bed31ce164b3929b.apm.ap-northeast-2.aws.elastic-cloud.com:443',
+  environment: 'my-environment'
+});
 
 dotenv.config();
 const webSocket = require('./socket');

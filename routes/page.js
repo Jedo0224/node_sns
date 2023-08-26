@@ -48,7 +48,8 @@ router.get("/", async (req, res, next) => {
 });
 
 router.get("/hashtag", async (req, res, next) => {
-  logger.info(`해시 태그 검색 요청 시작 - ${res.locals.ip} ${query}`);
+  
+  logger.info(`해시 태그 검색 요청 시작 - ${res.locals.ip}`);
   const query = req.query.hashtag;
   if (!query) {
     return res.redirect("/");
@@ -59,7 +60,15 @@ router.get("/hashtag", async (req, res, next) => {
     if (hashtag) {
       posts = await hashtag.getPosts({ include: [{ model: User }] });
     }
-    logger.info(`해시 태그 검색 요청 완료 - ${res.locals.ip}`);
+
+    // 나이 성별 지역
+    const user = await User.findOne({
+      where:{
+        id: req.user.id
+      }
+    });
+
+    logger.info(`해시 태그 검색 요청 완료 - ${res.locals.ip} #${query} ${user.dataValues.age} ${user.dataValues.gender} ${user.dataValues.region}`);
     return res.render("main", {
       title: `${query} | Elastic-SNS`,
       twits: posts,

@@ -1,3 +1,5 @@
+import { init as initApm } from '@elastic/apm-rum'
+
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
@@ -14,6 +16,12 @@ var apm = require('elastic-apm-node').start({
   secretToken: 'gKJZdNMdFf4yLIf408',
   serverUrl: 'https://129403cb556b4d73bed31ce164b3929b.apm.ap-northeast-2.aws.elastic-cloud.com:443',
   environment: 'my-environment'
+});
+
+const rumApm = initApm({
+  serviceName: 'my-service-name',
+  serverUrl: 'https://129403cb556b4d73bed31ce164b3929b.apm.ap-northeast-2.aws.elastic-cloud.com:443', // Elastic APM Server URL
+  // Other configuration options
 });
 
 dotenv.config();

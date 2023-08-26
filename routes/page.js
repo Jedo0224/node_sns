@@ -13,15 +13,20 @@ router.use((req, res, next) => {
 });
 
 router.get('/profile', isLoggedIn, (req, res) => {
+  logger.info(`내 프로필 페이지 조회 요청 시작 - ${res.locals.ip}`);
   res.render('profile', { title: '내 정보 - Elastic-SNS' });
+  logger.info(`내 프로필 페이지 랜더링 완료 - ${res.locals.ip}`);
 });
 
 router.get('/join', isNotLoggedIn, (req, res) => {
+  logger.info(`내 회원가입 페이지 조회 요청 시작 - ${res.locals.ip}`);
   res.render('join', { title: '회원가입 - Elastic-SNS' });
+  logger.info(`내 회원가입 페이지 랜더링 조회 완료 - ${res.locals.ip}`);
 });
 
 router.get('/', async (req, res, next) => {
   try {
+    logger.info(`메인 페이지 접속 요청 시작 - ${res.locals.ip}`);
     const posts = await Post.findAll({
       include: {
         model: User,
@@ -29,17 +34,19 @@ router.get('/', async (req, res, next) => {
       },
       order: [['createdAt', 'DESC']],
     });
+    logger.info(`메인 페이지 접속 요청 완료 - ${res.locals.ip}`);
     res.render('main', {
       title: 'Elastic-SNS',
       twits: posts,
     });
   } catch (err) {
-    console.error(err);
+    logger.info(`메인 페이지 접속 요청 실패 - ${res.locals.ip}`);
     next(err);
   }
 });
 
 router.get('/hashtag', async (req, res, next) => {
+  logger.info(`해시테그 검색 요청 시작 - ${res.locals.ip}`);
   const query = req.query.hashtag;
   if (!query) {
     return res.redirect('/');
@@ -50,13 +57,13 @@ router.get('/hashtag', async (req, res, next) => {
     if (hashtag) {
       posts = await hashtag.getPosts({ include: [{ model: User }] });
     }
-
+    logger.info(`해시테그 검색 요청 완료 - ${res.locals.ip}`);
     return res.render('main', {
       title: `${query} | Elastic-SNS`,
       twits: posts,
     });
   } catch (error) {
-    console.error(error);
+    logger.info(`해시테그 검색 요청 실패 - ${res.locals.ip}`);
     return next(error);
   }
 });

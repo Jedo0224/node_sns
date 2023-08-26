@@ -10,3 +10,7 @@ node_modules/
 nodebird-api/
 
 nodecat/
+
+combined.log
+
+error.log

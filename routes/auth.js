@@ -9,7 +9,8 @@ const router = express.Router();
 // 회원가입
 router.post('/join', isNotLoggedIn, async (req, res, next) => {
   logger.info(`회원가입 시작 - ${res.locals.ip}`);
-  const { email, nick, password } = req.body;
+  console.log("Req.body: ", req.body);
+  const { email, nick, password, gender, age, location } = req.body;
   try {
     const exUser = await User.findOne({ where: { email } });
     if (exUser) {
@@ -20,6 +21,9 @@ router.post('/join', isNotLoggedIn, async (req, res, next) => {
       email,
       nick,
       password: hash,
+      gender,
+      age,
+      region: location
     });
     logger.info(`회원가입 완료 - ${res.locals.ip}`);
     return res.redirect('/');
@@ -48,7 +52,7 @@ router.post('/login', isNotLoggedIn, (req, res, next) => {
           console.error(loginError);
           return next(loginError);
         }
-        logger.info(`로그인 완료 - ${res.locals.ip}`);
+        logger.info(`로그인 완료 - ${res.locals.ip} ${user.dataValues.age} ${user.dataValues.gender} ${user.dataValues.region}`);
         return res.redirect('/');
       });
     })(req, res, next); // 미들웨어 내의 미들웨어에는 (req, res, next)를 붙입니다.
